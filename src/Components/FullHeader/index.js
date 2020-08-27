@@ -5,7 +5,8 @@ import {
 	headerStyle,
 	containerStyle,
 	subtitleStyle,
-	titleStyle
+	titleStyle,
+	videoStyle
 } from './styles';
 
 
@@ -41,7 +42,9 @@ const FullHeader = ({ title, subtitle, bgColor, textColor, font, bgImage, video 
 				{title && <h1 style={titleStyle}>{title}</h1>}
 				{subtitle && <h2 style={subtitleStyle}>{subtitle}</h2>}
 			</div>
-			{video && <video autoPlay muted loop src={video} type='video/mp4' />}
+			{video && 
+				<video style={videoStyle} autoPlay muted loop src={video} type='video/mp4'></video>
+			}
 		</header>
   );
 }

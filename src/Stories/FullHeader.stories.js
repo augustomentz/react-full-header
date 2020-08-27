@@ -1,6 +1,8 @@
 import React from 'react';
 import FullHeader from '../Components/FullHeader';
 
+import AllOver10Seconds from '../assets/videos/all_over_10_seconds.mp4';
+
 export default {
   title: 'Components/FullHeader',
   component: FullHeader,
@@ -49,7 +51,7 @@ export const WithVideo = () =>
   <FullHeader
     title='TDD' 
     subtitle='What tested may never break' 
-    video='https://www.youtube.com/embed/rUWxSEwctFU'
+    video={AllOver10Seconds}
   />;
 WithVideo.storyName = 'With Title, Subtitle and Video';
 
